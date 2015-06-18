@@ -1,0 +1,11 @@
+ipython
+numpy
+scipy
+pandas
+matplotlib
+scikit-learn
+# For Ipython notebooks
+pyzmq
+jinja2
+tornado
+jsonschema
