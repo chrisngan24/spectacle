@@ -1,0 +1,3 @@
+# remove old data
+rm raw.json
+scrapy runspider scraper.py -o raw_script.json
