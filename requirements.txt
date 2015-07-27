@@ -4,8 +4,12 @@ scipy
 pandas
 matplotlib
 scikit-learn
+ggplot
+rpy2
+
 # For Ipython notebooks
 pyzmq
 jinja2
 tornado
 jsonschema
+
