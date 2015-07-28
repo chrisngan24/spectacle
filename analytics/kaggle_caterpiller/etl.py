@@ -22,6 +22,9 @@ def etl(path_to_data):
     df_train = pd.read_csv(
             merge_file_name(path_to_data, 'train_set.csv')
             )
+    df_test = pd.read_csv(
+            merge_file_name(path_to_data, 'test_set.csv')
+            )
     df_tubes = pd.read_csv(
             merge_file_name(path_to_data, 'tube.csv')
             )
@@ -70,10 +73,12 @@ def etl(path_to_data):
 
 
     # Join all to train set
-    df = pd.merge(df, df_train, on=TUBE_ID)
+    df_train = pd.merge(df, df_train, on=TUBE_ID)
+    df_test = pd.merge(df, df_test, on=TUBE_ID)
 
-    feature_extend(df)
-    return df
+    feature_extend(df_train)
+    feature_extend(df_test)
+    return [df_train, df_test]
 
 def get_cols_matching_regex(col_arr, regex):
     m_cols = []
