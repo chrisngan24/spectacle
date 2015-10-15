@@ -16,7 +16,7 @@ here = path.abspath(path.dirname(__file__))
 with open(path.join(here, 'DESCRIPTION.rst'), encoding='utf-8') as f:
     long_description = f.read()
 setup(
-    name='sample',
+    name='spectacle',
     version='0',
     description='Internal package for chrisngan24',
     long_description=long_description,
