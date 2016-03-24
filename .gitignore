@@ -105,3 +105,8 @@ __pycache__
 .#*
 .coverage
 *.swp
+
+
+# R
+.RData
+*.gephi
